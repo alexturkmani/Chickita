@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Clock, Phone, Navigation, Star, Car, Train, ShoppingBag } from 'lucide-react'
+import { MapPin, Clock, Phone, Navigation, Star, Car, ShoppingBag } from 'lucide-react'
 
 interface Location {
   id: string
