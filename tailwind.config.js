@@ -58,8 +58,8 @@ export default {
         },
       },
       fontFamily: {
-        // Chickita uses Clarkson/Proxima Nova style fonts
-        display: ['Cormorant Garamond', 'Georgia', 'serif'],
+        // Chickita elegant display font
+        display: ['Playfair Display', 'Georgia', 'serif'],
         sans: ['Montserrat', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
