@@ -293,7 +293,7 @@ export default function Menu() {
                 onClick={() => setActiveCategory(category.id)}
                 className={`px-6 py-2.5 rounded-full whitespace-nowrap font-medium transition-all ${
                   activeCategory === category.id
-                    ? 'bg-primary-500 text-black'
+                    ? 'bg-primary-500 text-white'
                     : 'bg-dark-700 text-dark-300 hover:bg-dark-600 hover:text-white'
                 }`}
               >
@@ -374,7 +374,7 @@ export default function Menu() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <Link
               to="/order"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-500 text-black font-semibold rounded-full hover:bg-primary-400 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-400 transition-colors"
             >
               Order Online
             </Link>
@@ -436,7 +436,7 @@ export default function Menu() {
               <p className="text-dark-300 mt-4">{selectedItem.description}</p>
               <Link
                 to="/order"
-                className="w-full mt-6 py-3 bg-primary-500 text-black font-semibold rounded-full flex items-center justify-center hover:bg-primary-400 transition-colors"
+                className="w-full mt-6 py-3 bg-primary-500 text-white font-semibold rounded-full flex items-center justify-center hover:bg-primary-400 transition-colors"
               >
                 Order Now
               </Link>

@@ -9,16 +9,16 @@ export default {
       colors: {
         // Chickita brand colors - exact match to original website
         primary: {
-          50: '#fdf8f0',
-          100: '#f9ecd5',
-          200: '#f2d9aa',
-          300: '#e8c17a',
-          400: '#daa94e',
-          500: '#C8A962', // Main gold/amber accent color (Chickita brand)
-          600: '#b8923d',
-          700: '#997633',
-          800: '#7d5f2d',
-          900: '#674d28',
+          50: '#fef4f2',
+          100: '#fde7e2',
+          200: '#fcd3ca',
+          300: '#f9b4a5',
+          400: '#f48871',
+          500: '#E8461C', // Main orange-red accent (Chickita headings)
+          600: '#d53a14',
+          700: '#b32e10',
+          800: '#942912',
+          900: '#7b2815',
         },
         secondary: {
           50: '#fef6ee',
@@ -26,7 +26,7 @@ export default {
           200: '#f8d3ae',
           300: '#f3b57a',
           400: '#ed9044',
-          500: '#e8751f', // Orange/flame accent
+          500: '#e8751f', // Orange accent
           600: '#d95d11',
           700: '#b44610',
           800: '#903915',
@@ -42,30 +42,17 @@ export default {
           600: '#404040',
           700: '#2d2d2d',
           800: '#1a1a1a',
-          900: '#000000', // Pure black background (Chickita brand)
-        },
-        gold: {
-          50: '#fdfbf5',
-          100: '#f9f3e3',
-          200: '#f2e4c3',
-          300: '#e8d09a',
-          400: '#dbb86d',
-          500: '#C8A962', // Chickita gold
-          600: '#b39347',
-          700: '#95763a',
-          800: '#795f34',
-          900: '#644e2e',
+          900: '#0a0a0a',
         },
       },
       fontFamily: {
-        // Chickita elegant display font
-        display: ['Playfair Display', 'Georgia', 'serif'],
+        // Chickita handwritten script font for headings
+        display: ['Pacifico', 'cursive'],
         sans: ['Montserrat', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gold-gradient': 'linear-gradient(135deg, #C8A962 0%, #dbb86d 100%)',
-        'flame-gradient': 'linear-gradient(135deg, #C8A962 0%, #e8751f 100%)',
+        'flame-gradient': 'linear-gradient(135deg, #E8461C 0%, #e8751f 100%)',
       },
     },
   },

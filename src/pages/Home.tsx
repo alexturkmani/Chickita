@@ -38,7 +38,7 @@ function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             to="/order"
-            className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-500 text-black font-semibold rounded-full hover:bg-primary-400 transition-all btn-glow text-lg"
+            className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-400 transition-all btn-glow text-lg"
           >
             Order Now
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -156,7 +156,7 @@ function FeaturedMenu() {
         <div className="text-center mt-12">
           <Link
             to="/menu"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-primary-500 text-black font-semibold rounded-full hover:bg-primary-400 transition-colors"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-400 transition-colors"
           >
             Explore Full Menu
             <ArrowRight size={20} />
@@ -323,7 +323,7 @@ function LocationsPreview() {
                 <div className="flex gap-2 mt-4">
                   <Link
                     to="/order"
-                    className="flex-1 py-2 bg-primary-500 text-black text-sm font-medium rounded-lg text-center hover:bg-primary-400 transition-colors"
+                    className="flex-1 py-2 bg-primary-500 text-white text-sm font-medium rounded-lg text-center hover:bg-primary-400 transition-colors"
                   >
                     Order
                   </Link>
@@ -450,7 +450,7 @@ function CTASection() {
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <Link
               to="/order"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-500 text-black font-semibold rounded-full hover:bg-primary-400 transition-all text-lg"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-400 transition-all text-lg"
             >
               Order Online
               <ArrowRight size={20} />

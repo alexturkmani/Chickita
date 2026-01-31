@@ -207,7 +207,7 @@ export default function Sauces() {
               
               <Link
                 to="/order"
-                className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-primary-500 text-black font-semibold rounded-full hover:bg-primary-400 transition-colors"
+                className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-400 transition-colors"
               >
                 Try Our Sauces
               </Link>
@@ -240,7 +240,7 @@ export default function Sauces() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <Link
               to="/order"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-500 text-black font-semibold rounded-full hover:bg-primary-400 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-400 transition-colors"
             >
               Order Now
             </Link>

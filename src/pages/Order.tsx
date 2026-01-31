@@ -199,7 +199,7 @@ export default function Order() {
                       href={selectedLocationData?.orderUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-8 py-4 bg-primary-500 text-black font-semibold rounded-full hover:bg-primary-400 transition-colors text-lg"
+                      className="inline-flex items-center gap-2 px-8 py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-400 transition-colors text-lg"
                     >
                       Start Your Order
                       <ChevronRight size={20} />

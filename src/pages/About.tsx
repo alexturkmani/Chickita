@@ -158,7 +158,7 @@ export default function About() {
               
               <Link
                 to="/menu"
-                className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-primary-500 text-black font-semibold rounded-full hover:bg-primary-400 transition-colors"
+                className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-400 transition-colors"
               >
                 Explore Our Menu
                 <ArrowRight size={20} />
@@ -203,7 +203,7 @@ export default function About() {
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-primary-500 text-black font-semibold rounded-full hover:bg-primary-400 transition-colors"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-400 transition-colors"
           >
             Apply Now
             <ArrowRight size={20} />

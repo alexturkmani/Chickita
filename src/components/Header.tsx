@@ -32,7 +32,7 @@ export default function Header() {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-primary-500 text-black py-2 text-sm">
+      <div className="bg-primary-500 text-white py-2 text-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <div className="flex items-center gap-6">
             <a href="tel:0395965473" className="flex items-center gap-2 hover:text-white transition-colors">
@@ -95,7 +95,7 @@ export default function Header() {
             <div className="hidden lg:flex items-center gap-4">
               <Link
                 to="/order"
-                className="px-6 py-2.5 bg-primary-500 text-black font-semibold rounded-full hover:bg-primary-400 transition-colors btn-glow"
+                className="px-6 py-2.5 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-400 transition-colors btn-glow"
               >
                 Order Now
               </Link>
@@ -139,7 +139,7 @@ export default function Header() {
               <div className="flex flex-col gap-4 mt-6">
                 <Link
                   to="/order"
-                  className="w-full py-3 bg-primary-500 text-black font-semibold rounded-full text-center"
+                  className="w-full py-3 bg-primary-500 text-white font-semibold rounded-full text-center"
                 >
                   Order Now
                 </Link>

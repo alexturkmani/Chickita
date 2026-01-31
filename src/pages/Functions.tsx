@@ -105,7 +105,7 @@ export default function Functions() {
               href="https://www.chickita.com.au/s/20250201-Chickita-Functions-Set-Menu-Web.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-500 text-black font-semibold rounded-full hover:bg-primary-400 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary-500 text-white font-semibold rounded-full hover:bg-primary-400 transition-colors"
             >
               View Function Packages
             </a>
@@ -208,7 +208,7 @@ export default function Functions() {
                   to="/contact"
                   className={`w-full py-3 rounded-full font-semibold flex items-center justify-center gap-2 transition-all ${
                     pkg.isPopular
-                      ? 'bg-primary-500 text-black hover:bg-primary-400'
+                      ? 'bg-primary-500 text-white hover:bg-primary-400'
                       : 'border border-dark-600 text-white hover:border-primary-500 hover:text-primary-500'
                   }`}
                 >
