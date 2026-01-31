@@ -77,36 +77,36 @@ const sauces: Sauce[] = [
 
 export default function Sauces() {
   return (
-    <div className="min-h-screen bg-dark-900">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-b from-dark-800 to-dark-900 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
         <div className="absolute top-10 left-10 w-32 h-32 bg-primary-500/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-10 right-10 w-48 h-48 bg-secondary-500/20 rounded-full blur-3xl animate-pulse delay-700" />
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-primary-500 font-medium text-sm uppercase tracking-wider">Signature Sauces</span>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-white mt-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-gray-900 mt-4">
             Six Unique <span className="gradient-text">Flavours</span>
           </h1>
-          <p className="text-dark-300 mt-6 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-600 mt-6 max-w-2xl mx-auto text-lg">
             Our signature sauces are carefully crafted with artisanal Asian ingredients, 
             developed to perfectly complement our flame-grilled chicken.
           </p>
           
           {/* Heat Scale Legend */}
           <div className="flex items-center justify-center gap-4 mt-8">
-            <span className="text-dark-400 text-sm">Heat Level:</span>
+            <span className="text-gray-500 text-sm">Heat Level:</span>
             <div className="flex items-center gap-2">
               {[0, 1, 2, 3, 4, 5].map((level) => (
                 <div key={level} className="flex items-center gap-1">
                   <Flame 
                     size={16} 
-                    className={level === 0 ? 'text-dark-600' : level <= 2 ? 'text-orange-400' : 'text-red-500'} 
+                    className={level === 0 ? 'text-gray-300' : level <= 2 ? 'text-orange-400' : 'text-red-500'} 
                   />
                 </div>
               ))}
             </div>
-            <span className="text-dark-400 text-sm">Mild to Extreme</span>
+            <span className="text-gray-500 text-sm">Mild to Extreme</span>
           </div>
         </div>
       </section>
@@ -118,7 +118,7 @@ export default function Sauces() {
             {sauces.map((sauce) => (
               <div
                 key={sauce.id}
-                className="sauce-card bg-dark-800 rounded-3xl p-8 border border-dark-700 hover:border-primary-500/30 transition-all"
+                className="bg-white rounded-3xl p-8 border border-gray-200 shadow-lg hover:border-primary-500/30 hover:shadow-xl transition-all"
               >
                 {/* Sauce Icon */}
                 <div className={`w-20 h-20 ${sauce.bgColor} rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg`}>
@@ -127,33 +127,33 @@ export default function Sauces() {
                 
                 {/* Name & Heat */}
                 <div className="text-center mb-4">
-                  <h3 className="text-2xl font-display font-bold text-white">{sauce.name}</h3>
+                  <h3 className="text-2xl font-display font-bold text-gray-900">{sauce.name}</h3>
                   <div className="flex items-center justify-center gap-1 mt-2">
                     {[...Array(5)].map((_, i) => (
                       <Flame
                         key={i}
                         size={18}
-                        className={i < sauce.heatLevel ? sauce.color : 'text-dark-600'}
+                        className={i < sauce.heatLevel ? sauce.color : 'text-gray-300'}
                         fill={i < sauce.heatLevel ? 'currentColor' : 'none'}
                       />
                     ))}
                     {sauce.heatLevel === 0 && (
-                      <span className="text-dark-400 text-sm ml-2">Mild</span>
+                      <span className="text-gray-500 text-sm ml-2">Mild</span>
                     )}
                   </div>
                 </div>
                 
                 {/* Description */}
-                <p className="text-dark-400 text-center mb-6">{sauce.description}</p>
+                <p className="text-gray-600 text-center mb-6">{sauce.description}</p>
                 
                 {/* Key Ingredients */}
                 <div className="mb-4">
-                  <h4 className="text-white text-sm font-semibold mb-2">Key Ingredients</h4>
+                  <h4 className="text-gray-900 text-sm font-semibold mb-2">Key Ingredients</h4>
                   <div className="flex flex-wrap gap-2">
                     {sauce.ingredients.map((ingredient) => (
                       <span
                         key={ingredient}
-                        className="px-3 py-1 bg-dark-700 text-dark-300 text-xs rounded-full"
+                        className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full"
                       >
                         {ingredient}
                       </span>
@@ -163,7 +163,7 @@ export default function Sauces() {
                 
                 {/* Best With */}
                 <div>
-                  <h4 className="text-white text-sm font-semibold mb-2">Best With</h4>
+                  <h4 className="text-gray-900 text-sm font-semibold mb-2">Best With</h4>
                   <div className="flex flex-wrap gap-2">
                     {sauce.pairings.map((pairing) => (
                       <span
@@ -182,14 +182,14 @@ export default function Sauces() {
       </section>
 
       {/* Sauce Story */}
-      <section className="py-24 bg-dark-800">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-display font-bold text-white">
+              <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900">
                 Crafted with <span className="gradient-text">Passion</span>
               </h2>
-              <div className="mt-6 space-y-4 text-dark-300 leading-relaxed">
+              <div className="mt-6 space-y-4 text-gray-600 leading-relaxed">
                 <p>
                   The Chickita® sauce recipes have been carefully developed over years of 
                   experimentation and refinement to perfectly complement our flame-grilled chicken.
@@ -229,12 +229,12 @@ export default function Sauces() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-dark-900">
+      <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-display font-bold text-white">
+          <h2 className="text-3xl font-display font-bold text-gray-900">
             Ready to Find Your Favourite?
           </h2>
-          <p className="text-dark-300 mt-4">
+          <p className="text-gray-600 mt-4">
             Visit any of our four Melbourne locations and discover which sauce is your perfect match
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">

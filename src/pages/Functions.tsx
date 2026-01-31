@@ -79,24 +79,24 @@ export default function Functions() {
   ]
 
   return (
-    <div className="min-h-screen bg-dark-900">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-b from-dark-800 to-dark-900 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
             alt="Functions"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-10"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-dark-900/50 to-dark-900" />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/50 to-white" />
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-primary-500 font-medium text-sm uppercase tracking-wider">Functions & Events</span>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-white mt-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-gray-900 mt-4">
             Celebrate with <span className="gradient-text">Chickita</span>
           </h1>
-          <p className="text-dark-300 mt-6 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-600 mt-6 max-w-2xl mx-auto text-lg">
             Chickita is the perfect spot for family dinners, group catch-ups, birthday celebrations, 
             kids' parties, and corporate functions.
           </p>
@@ -123,10 +123,10 @@ export default function Functions() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-display font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900">
               Perfect for <span className="gradient-text">Every Occasion</span>
             </h2>
-            <p className="text-dark-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               Our bold Asian-inspired flavours are sure to please every palate
             </p>
           </div>
@@ -135,7 +135,7 @@ export default function Functions() {
             {functionTypes.map((type) => (
               <div
                 key={type.title}
-                className="group bg-dark-800 rounded-2xl overflow-hidden border border-dark-700 hover:border-primary-500/30 transition-all"
+                className="group bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:border-primary-500/30 hover:shadow-xl transition-all"
               >
                 <div className="aspect-video overflow-hidden">
                   <img
@@ -149,9 +149,9 @@ export default function Functions() {
                     <div className="w-10 h-10 bg-primary-500/10 rounded-lg flex items-center justify-center">
                       <type.icon size={20} className="text-primary-500" />
                     </div>
-                    <h3 className="text-xl font-semibold text-white">{type.title}</h3>
+                    <h3 className="text-xl font-semibold text-gray-900">{type.title}</h3>
                   </div>
-                  <p className="text-dark-400">{type.description}</p>
+                  <p className="text-gray-600">{type.description}</p>
                 </div>
               </div>
             ))}
@@ -160,13 +160,13 @@ export default function Functions() {
       </section>
 
       {/* Packages */}
-      <section className="py-24 bg-dark-800">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-display font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900">
               Function <span className="gradient-text">Packages</span>
             </h2>
-            <p className="text-dark-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               We offer a range of function packages to suit groups of all sizes
             </p>
           </div>
@@ -175,8 +175,8 @@ export default function Functions() {
             {packages.map((pkg) => (
               <div
                 key={pkg.name}
-                className={`relative bg-dark-900 rounded-2xl p-8 border ${
-                  pkg.isPopular ? 'border-primary-500' : 'border-dark-700'
+                className={`relative bg-white rounded-2xl p-8 shadow-lg border ${
+                  pkg.isPopular ? 'border-primary-500' : 'border-gray-100'
                 }`}
               >
                 {pkg.isPopular && (
@@ -185,12 +185,12 @@ export default function Functions() {
                   </div>
                 )}
                 
-                <h3 className="text-2xl font-display font-bold text-white mb-2">{pkg.name}</h3>
-                <p className="text-dark-500 text-sm mb-4">{pkg.minGuests}</p>
+                <h3 className="text-2xl font-display font-bold text-gray-900 mb-2">{pkg.name}</h3>
+                <p className="text-gray-500 text-sm mb-4">{pkg.minGuests}</p>
                 
                 <div className="flex items-baseline gap-1 mb-6">
                   <span className="text-4xl font-bold gradient-text">{pkg.price}</span>
-                  <span className="text-dark-400">/{pkg.priceNote}</span>
+                  <span className="text-gray-500">/{pkg.priceNote}</span>
                 </div>
                 
                 <ul className="space-y-3 mb-8">
@@ -199,7 +199,7 @@ export default function Functions() {
                       <svg className="w-5 h-5 text-primary-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      <span className="text-dark-300">{item}</span>
+                      <span className="text-gray-600">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -209,7 +209,7 @@ export default function Functions() {
                   className={`w-full py-3 rounded-full font-semibold flex items-center justify-center gap-2 transition-all ${
                     pkg.isPopular
                       ? 'bg-primary-500 text-white hover:bg-primary-400'
-                      : 'border border-dark-600 text-white hover:border-primary-500 hover:text-primary-500'
+                      : 'border border-gray-300 text-gray-700 hover:border-primary-500 hover:text-primary-500'
                   }`}
                 >
                   Enquire Now
@@ -219,17 +219,17 @@ export default function Functions() {
             ))}
           </div>
           
-          <p className="text-center text-dark-500 mt-8">
+          <p className="text-center text-gray-500 mt-8">
             * Custom packages available. Contact us for more details.
           </p>
         </div>
       </section>
 
       {/* Gallery */}
-      <section className="py-24 bg-dark-900">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-display font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900">
               Event <span className="gradient-text">Gallery</span>
             </h2>
           </div>

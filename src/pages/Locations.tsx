@@ -109,28 +109,28 @@ const locations: Location[] = [
 
 export default function Locations() {
   return (
-    <div className="min-h-screen bg-dark-900">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-b from-dark-800 to-dark-900">
+      <section className="relative py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-primary-500 font-medium text-sm uppercase tracking-wider">Our Locations</span>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-white mt-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-gray-900 mt-4">
             Find Us <span className="gradient-text">Near You</span>
           </h1>
-          <p className="text-dark-300 mt-6 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-600 mt-6 max-w-2xl mx-auto text-lg">
             Four convenient locations across Melbourne. Visit us for dine-in, takeaway, or order online for delivery.
           </p>
         </div>
       </section>
 
       {/* Map Overview - Placeholder for interactive map */}
-      <section className="py-8 bg-dark-800">
+      <section className="py-8 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-dark-700 rounded-2xl overflow-hidden h-[300px] flex items-center justify-center">
+          <div className="bg-gray-100 rounded-2xl overflow-hidden h-[300px] flex items-center justify-center border border-gray-200">
             <div className="text-center">
               <MapPin size={48} className="text-primary-500 mx-auto mb-4" />
-              <p className="text-dark-300">Interactive map coming soon</p>
-              <p className="text-dark-400 text-sm mt-2">Click on any location below to get directions</p>
+              <p className="text-gray-600">Interactive map coming soon</p>
+              <p className="text-gray-500 text-sm mt-2">Click on any location below to get directions</p>
             </div>
           </div>
         </div>
@@ -143,7 +143,7 @@ export default function Locations() {
             {locations.map((location, index) => (
               <div
                 key={location.id}
-                className={`bg-dark-800 rounded-3xl overflow-hidden border border-dark-700 hover:border-primary-500/30 transition-colors ${
+                className={`bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 hover:border-primary-500/30 transition-colors ${
                   index % 2 === 0 ? '' : 'lg:flex-row-reverse'
                 }`}
               >
@@ -161,10 +161,10 @@ export default function Locations() {
                           NEW LOCATION
                         </div>
                       )}
-                      <div className="absolute bottom-4 left-4 flex items-center gap-2 px-3 py-1.5 bg-dark-900/80 backdrop-blur-sm rounded-full">
+                      <div className="absolute bottom-4 left-4 flex items-center gap-2 px-3 py-1.5 bg-white/90 backdrop-blur-sm rounded-full">
                         <Star size={16} className="text-yellow-400 fill-yellow-400" />
-                        <span className="text-white font-medium">{location.rating}</span>
-                        <span className="text-dark-400 text-sm">({location.reviews} reviews)</span>
+                        <span className="text-gray-900 font-medium">{location.rating}</span>
+                        <span className="text-gray-600 text-sm">({location.reviews} reviews)</span>
                       </div>
                     </div>
                   </div>
@@ -173,7 +173,7 @@ export default function Locations() {
                   <div className="lg:w-3/5 p-8 lg:p-12">
                     <div className="flex items-start justify-between gap-4 mb-6">
                       <div>
-                        <h2 className="text-2xl lg:text-3xl font-display font-bold text-white">
+                        <h2 className="text-2xl lg:text-3xl font-display font-bold text-gray-900">
                           Chickita {location.name}
                         </h2>
                         {location.subtitle && (
@@ -189,8 +189,8 @@ export default function Locations() {
                           <MapPin size={20} className="text-primary-500" />
                         </div>
                         <div>
-                          <h4 className="text-white font-medium">Address</h4>
-                          <p className="text-dark-400 text-sm mt-1">{location.fullAddress}</p>
+                          <h4 className="text-gray-900 font-medium">Address</h4>
+                          <p className="text-gray-600 text-sm mt-1">{location.fullAddress}</p>
                         </div>
                       </div>
                       
@@ -199,8 +199,8 @@ export default function Locations() {
                           <Clock size={20} className="text-primary-500" />
                         </div>
                         <div>
-                          <h4 className="text-white font-medium">Hours</h4>
-                          <p className="text-dark-400 text-sm mt-1">{location.hours.weekday}</p>
+                          <h4 className="text-gray-900 font-medium">Hours</h4>
+                          <p className="text-gray-600 text-sm mt-1">{location.hours.weekday}</p>
                         </div>
                       </div>
                       
@@ -209,8 +209,8 @@ export default function Locations() {
                           <Phone size={20} className="text-primary-500" />
                         </div>
                         <div>
-                          <h4 className="text-white font-medium">Phone</h4>
-                          <a href={`tel:${location.phone.replace(/\s/g, '')}`} className="text-dark-400 text-sm mt-1 hover:text-primary-500 transition-colors">
+                          <h4 className="text-gray-900 font-medium">Phone</h4>
+                          <a href={`tel:${location.phone.replace(/\s/g, '')}`} className="text-gray-600 text-sm mt-1 hover:text-primary-500 transition-colors">
                             {location.phone}
                           </a>
                         </div>
@@ -221,20 +221,20 @@ export default function Locations() {
                           <Car size={20} className="text-primary-500" />
                         </div>
                         <div>
-                          <h4 className="text-white font-medium">Parking</h4>
-                          <p className="text-dark-400 text-sm mt-1">{location.parking}</p>
+                          <h4 className="text-gray-900 font-medium">Parking</h4>
+                          <p className="text-gray-600 text-sm mt-1">{location.parking}</p>
                         </div>
                       </div>
                     </div>
                     
                     {/* Features */}
                     <div className="mb-8">
-                      <h4 className="text-white font-medium mb-3">Available Services</h4>
+                      <h4 className="text-gray-900 font-medium mb-3">Available Services</h4>
                       <div className="flex flex-wrap gap-2">
                         {location.features.map((feature) => (
                           <span
                             key={feature}
-                            className="px-3 py-1.5 bg-dark-700 text-dark-300 text-sm rounded-full"
+                            className="px-3 py-1.5 bg-gray-100 text-gray-700 text-sm rounded-full"
                           >
                             {feature}
                           </span>
@@ -257,14 +257,14 @@ export default function Locations() {
                         href={location.mapUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-6 py-3 border border-dark-600 text-white font-semibold rounded-full hover:border-primary-500 hover:text-primary-500 transition-colors"
+                        className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 text-gray-700 font-semibold rounded-full hover:border-primary-500 hover:text-primary-500 transition-colors"
                       >
                         <Navigation size={18} />
                         Get Directions
                       </a>
                       <a
                         href={`tel:${location.phone.replace(/\s/g, '')}`}
-                        className="inline-flex items-center gap-2 px-6 py-3 border border-dark-600 text-white font-semibold rounded-full hover:border-primary-500 hover:text-primary-500 transition-colors"
+                        className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 text-gray-700 font-semibold rounded-full hover:border-primary-500 hover:text-primary-500 transition-colors"
                       >
                         <Phone size={18} />
                         Call
@@ -279,12 +279,12 @@ export default function Locations() {
       </section>
 
       {/* Coming Soon */}
-      <section className="py-16 bg-dark-800">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-display font-bold text-white">
+          <h2 className="text-3xl font-display font-bold text-gray-900">
             More Locations <span className="gradient-text">Coming Soon</span>
           </h2>
-          <p className="text-dark-300 mt-4">
+          <p className="text-gray-600 mt-4">
             We're expanding across Melbourne and beyond! Stay tuned for new Chickita locations near you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">

@@ -252,39 +252,39 @@ export default function Menu() {
   const currentCategory = menuCategories.find(cat => cat.id === activeCategory)
 
   return (
-    <div className="min-h-screen bg-dark-900">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-b from-dark-800 to-dark-900">
+      <section className="relative py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-primary-500 font-medium text-sm uppercase tracking-wider">Our Menu</span>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-white mt-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-gray-900 mt-4">
             Flame Grilled <span className="gradient-text">Goodness</span>
           </h1>
-          <p className="text-dark-300 mt-6 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-600 mt-6 max-w-2xl mx-auto text-lg">
             Every dish is made with 100% natural Australian chicken, flame-grilled to perfection 
             and served with our signature Asian-inspired sauces.
           </p>
           
           {/* Dietary Legend */}
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <div className="flex items-center gap-2 px-4 py-2 bg-dark-700 rounded-full">
+            <div className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full">
               <Flame size={16} className="text-primary-500" />
-              <span className="text-sm text-dark-300">Spicy</span>
+              <span className="text-sm text-gray-600">Spicy</span>
             </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-dark-700 rounded-full">
+            <div className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full">
               <Leaf size={16} className="text-green-500" />
-              <span className="text-sm text-dark-300">Vegetarian</span>
+              <span className="text-sm text-gray-600">Vegetarian</span>
             </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-dark-700 rounded-full">
+            <div className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full">
               <span className="text-xs font-bold text-amber-500">GF</span>
-              <span className="text-sm text-dark-300">Gluten Free</span>
+              <span className="text-sm text-gray-600">Gluten Free</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Category Navigation */}
-      <section className="sticky top-[5rem] z-40 bg-dark-900/95 backdrop-blur-md border-b border-dark-700">
+      <section className="sticky top-[5rem] z-40 bg-white/95 backdrop-blur-md border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex overflow-x-auto scrollbar-hide py-4 gap-2">
             {menuCategories.map((category) => (
@@ -294,7 +294,7 @@ export default function Menu() {
                 className={`px-6 py-2.5 rounded-full whitespace-nowrap font-medium transition-all ${
                   activeCategory === category.id
                     ? 'bg-primary-500 text-white'
-                    : 'bg-dark-700 text-dark-300 hover:bg-dark-600 hover:text-white'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900'
                 }`}
               >
                 {category.name}
@@ -310,8 +310,8 @@ export default function Menu() {
           {currentCategory && (
             <>
               <div className="mb-8">
-                <h2 className="text-2xl font-display font-bold text-white">{currentCategory.name}</h2>
-                <p className="text-dark-400 mt-2">{currentCategory.description}</p>
+                <h2 className="text-2xl font-display font-bold text-gray-900">{currentCategory.name}</h2>
+                <p className="text-gray-600 mt-2">{currentCategory.description}</p>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -319,7 +319,7 @@ export default function Menu() {
                   <div
                     key={item.id}
                     onClick={() => setSelectedItem(item)}
-                    className="group bg-dark-800 rounded-2xl overflow-hidden border border-dark-700 hover:border-primary-500/50 transition-all cursor-pointer card-hover"
+                    className="group bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:border-primary-500/50 hover:shadow-lg transition-all cursor-pointer card-hover"
                   >
                     <div className="relative aspect-video overflow-hidden">
                       <img
@@ -335,14 +335,14 @@ export default function Menu() {
                     </div>
                     <div className="p-5">
                       <div className="flex items-start justify-between gap-2">
-                        <h3 className="text-lg font-semibold text-white">{item.name}</h3>
+                        <h3 className="text-lg font-semibold text-gray-900">{item.name}</h3>
                         <div className="flex items-center gap-1">
                           {item.isSpicy && <Flame size={16} className="text-primary-500" />}
                           {item.isVegetarian && <Leaf size={16} className="text-green-500" />}
                           {item.isGlutenFree && <span className="text-xs font-bold text-amber-500">GF</span>}
                         </div>
                       </div>
-                      <p className="text-dark-400 text-sm mt-2 line-clamp-2">{item.description}</p>
+                      <p className="text-gray-600 text-sm mt-2 line-clamp-2">{item.description}</p>
                       <div className="flex items-center justify-between mt-4">
                         <span className="text-primary-500 font-bold text-lg">{item.price}</span>
                         <Link 
@@ -363,12 +363,12 @@ export default function Menu() {
       </section>
 
       {/* Order CTA */}
-      <section className="py-16 bg-dark-800">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-display font-bold text-white">
+          <h2 className="text-3xl font-display font-bold text-gray-900">
             Ready to Order?
           </h2>
-          <p className="text-dark-300 mt-4">
+          <p className="text-gray-600 mt-4">
             Order online for pickup or delivery from any of our four Melbourne locations
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
@@ -393,11 +393,11 @@ export default function Menu() {
       {/* Item Modal */}
       {selectedItem && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark-900/80 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-gray-900/80 backdrop-blur-sm"
           onClick={() => setSelectedItem(null)}
         >
           <div 
-            className="bg-dark-800 rounded-2xl max-w-lg w-full overflow-hidden border border-dark-700"
+            className="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-gray-200"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative aspect-video">
@@ -408,14 +408,14 @@ export default function Menu() {
               />
               <button
                 onClick={() => setSelectedItem(null)}
-                className="absolute top-4 right-4 w-10 h-10 bg-dark-900/80 rounded-full flex items-center justify-center text-white hover:bg-dark-900 transition-colors"
+                className="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center text-gray-900 hover:bg-white transition-colors"
               >
                 <X size={20} />
               </button>
             </div>
             <div className="p-6">
               <div className="flex items-start justify-between gap-4">
-                <h3 className="text-2xl font-display font-bold text-white">{selectedItem.name}</h3>
+                <h3 className="text-2xl font-display font-bold text-gray-900">{selectedItem.name}</h3>
                 <span className="text-primary-500 font-bold text-xl">{selectedItem.price}</span>
               </div>
               <div className="flex items-center gap-2 mt-2">
@@ -433,7 +433,7 @@ export default function Menu() {
                   <span className="text-sm text-amber-500">Gluten Free</span>
                 )}
               </div>
-              <p className="text-dark-300 mt-4">{selectedItem.description}</p>
+              <p className="text-gray-600 mt-4">{selectedItem.description}</p>
               <Link
                 to="/order"
                 className="w-full mt-6 py-3 bg-primary-500 text-white font-semibold rounded-full flex items-center justify-center hover:bg-primary-400 transition-colors"

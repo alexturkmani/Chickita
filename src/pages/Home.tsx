@@ -30,7 +30,7 @@ function Hero() {
           <span className="block gradient-text">Chicken Perfection</span>
         </h1>
         
-        <p className="text-lg sm:text-xl text-dark-400 max-w-2xl mx-auto mb-8">
+        <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
           Experience bold Southeast Asian flavours with our signature flame-grilled chicken. 
           100% natural Australian chicken, six unique sauces, unforgettable taste.
         </p>
@@ -108,15 +108,15 @@ function FeaturedMenu() {
   ]
 
   return (
-    <section className="py-24 bg-dark-900">
+    <section className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-primary-500 font-medium text-sm uppercase tracking-wider">Our Menu</span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mt-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-gray-900 mt-4">
             Flame Grilled <span className="gradient-text">Favourites</span>
           </h2>
-          <p className="text-dark-300 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
             Every dish is crafted with passion using 100% natural Australian chicken and the freshest ingredients
           </p>
         </div>
@@ -126,7 +126,7 @@ function FeaturedMenu() {
           {menuItems.map((item) => (
             <div
               key={item.title}
-              className="group bg-dark-800 rounded-2xl overflow-hidden card-hover"
+              className="group bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 card-hover"
             >
               <div className="aspect-square overflow-hidden">
                 <img
@@ -136,13 +136,13 @@ function FeaturedMenu() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
-                <p className="text-dark-400 text-sm mb-4 line-clamp-2">{item.description}</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm mb-4 line-clamp-2">{item.description}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-primary-500 font-semibold">{item.price}</span>
                   <Link 
                     to="/menu" 
-                    className="text-white hover:text-primary-500 transition-colors text-sm font-medium"
+                    className="text-gray-700 hover:text-primary-500 transition-colors text-sm font-medium"
                   >
                     View More →
                   </Link>
@@ -179,32 +179,32 @@ function SignatureSauces() {
   ]
 
   return (
-    <section className="py-24 bg-gradient-to-b from-dark-900 to-dark-800">
+    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>
             <span className="text-primary-500 font-medium text-sm uppercase tracking-wider">Signature Sauces</span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mt-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-gray-900 mt-4">
               Six Unique <span className="gradient-text">Flavours</span>
             </h2>
-            <p className="text-dark-300 mt-6 text-lg leading-relaxed">
+            <p className="text-gray-600 mt-6 text-lg leading-relaxed">
               Our signature sauces are crafted with artisanal Asian ingredients, carefully developed to complement our flame-grilled chicken. From mild and sweet to flaming hot, there's a sauce for every palate.
             </p>
             
             {/* Sauce List */}
             <div className="grid grid-cols-2 gap-4 mt-8">
               {sauces.map((sauce) => (
-                <div key={sauce.name} className="flex items-center gap-3 p-3 bg-dark-700/50 rounded-xl">
+                <div key={sauce.name} className="flex items-center gap-3 p-3 bg-gray-50 border border-gray-100 rounded-xl">
                   <div className={`w-3 h-3 rounded-full ${sauce.color}`} />
                   <div>
-                    <span className="text-white font-medium">{sauce.name}</span>
+                    <span className="text-gray-900 font-medium">{sauce.name}</span>
                     <div className="flex gap-0.5 mt-1">
                       {[...Array(5)].map((_, i) => (
                         <Flame
                           key={i}
                           size={12}
-                          className={i < sauce.heat ? 'text-primary-500' : 'text-dark-600'}
+                          className={i < sauce.heat ? 'text-primary-500' : 'text-gray-300'}
                         />
                       ))}
                     </div>
@@ -275,15 +275,15 @@ function LocationsPreview() {
   ]
 
   return (
-    <section className="py-24 bg-dark-800">
+    <section className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-primary-500 font-medium text-sm uppercase tracking-wider">Our Locations</span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mt-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-gray-900 mt-4">
             Find Us <span className="gradient-text">Near You</span>
           </h2>
-          <p className="text-dark-300 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
             Four convenient locations across Melbourne. Visit us for dine-in, takeaway, or order online for delivery.
           </p>
         </div>
@@ -293,7 +293,7 @@ function LocationsPreview() {
           {locations.map((location) => (
             <div
               key={location.name}
-              className="group location-card rounded-2xl overflow-hidden border border-dark-700 card-hover"
+              className="group bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 card-hover"
             >
               <div className="relative aspect-video overflow-hidden">
                 <img
@@ -308,15 +308,15 @@ function LocationsPreview() {
                 )}
               </div>
               <div className="p-5">
-                <h3 className="text-xl font-semibold text-white">{location.name}</h3>
+                <h3 className="text-xl font-semibold text-gray-900">{location.name}</h3>
                 {location.subtitle && (
                   <p className="text-primary-500 text-sm">{location.subtitle}</p>
                 )}
-                <div className="flex items-start gap-2 mt-3 text-dark-400 text-sm">
+                <div className="flex items-start gap-2 mt-3 text-gray-600 text-sm">
                   <MapPin size={16} className="flex-shrink-0 mt-0.5" />
                   <span>{location.address}</span>
                 </div>
-                <div className="flex items-center gap-2 mt-2 text-dark-400 text-sm">
+                <div className="flex items-center gap-2 mt-2 text-gray-600 text-sm">
                   <Clock size={16} />
                   <span>{location.hours}</span>
                 </div>
@@ -331,7 +331,7 @@ function LocationsPreview() {
                     href={`https://maps.google.com/?q=${encodeURIComponent(location.address)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 py-2 border border-dark-600 text-white text-sm font-medium rounded-lg text-center hover:border-primary-500 hover:text-primary-500 transition-colors"
+                    className="flex-1 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded-lg text-center hover:border-primary-500 hover:text-primary-500 transition-colors"
                   >
                     Directions
                   </a>
@@ -392,15 +392,15 @@ function WhyChickita() {
   ]
 
   return (
-    <section className="py-24 bg-dark-900">
+    <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-primary-500 font-medium text-sm uppercase tracking-wider">Why Choose Us</span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mt-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-gray-900 mt-4">
             What's Not to <span className="gradient-text">Love?</span>
           </h2>
-          <p className="text-dark-300 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
             Chickita is all about good food, good service, good value, and good times
           </p>
         </div>
@@ -410,11 +410,11 @@ function WhyChickita() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="p-8 bg-dark-800 rounded-2xl border border-dark-700 hover:border-primary-500/50 transition-colors"
+              className="p-8 bg-gray-50 rounded-2xl border border-gray-100 hover:border-primary-500/50 transition-colors"
             >
               <div className="text-4xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
-              <p className="text-dark-400">{feature.description}</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">{feature.title}</h3>
+              <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
         </div>
@@ -442,7 +442,7 @@ function CTASection() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white">
             Ready to Experience the <span className="gradient-text">Flame?</span>
           </h2>
-          <p className="text-dark-300 mt-6 text-lg">
+          <p className="text-gray-300 mt-6 text-lg">
             Order online for pickup or delivery, or book a table for the full Chickita experience. 
             Perfect for family dinners, celebrations, or a quick delicious meal.
           </p>

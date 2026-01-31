@@ -33,7 +33,7 @@ const locations = [
 
 export default function Footer() {
   return (
-    <footer className="bg-black border-t border-dark-800">
+    <footer className="bg-dark-950 border-t border-dark-800">
       {/* Newsletter Section */}
       <div className="bg-primary-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -50,7 +50,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="px-8 py-3 bg-black text-primary-500 font-semibold rounded-full hover:bg-dark-800 transition-colors"
+                className="px-8 py-3 bg-black text-primary-500 font-semibold rounded-full hover:bg-dark-900 transition-colors"
               >
                 Subscribe
               </button>

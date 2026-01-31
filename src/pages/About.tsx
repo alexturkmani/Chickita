@@ -3,19 +3,19 @@ import { ArrowRight, Award, Users, Heart, Globe } from 'lucide-react'
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-dark-900">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-b from-dark-800 to-dark-900 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
         <div className="absolute top-20 right-20 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-20 w-48 h-48 bg-secondary-500/10 rounded-full blur-3xl" />
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-primary-500 font-medium text-sm uppercase tracking-wider">Our Story</span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-white mt-4">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-gray-900 mt-4">
               Come Together for <span className="gradient-text">Chicken</span>
             </h1>
-            <p className="text-dark-300 mt-6 text-lg leading-relaxed">
+            <p className="text-gray-600 mt-6 text-lg leading-relaxed">
               Chickita is a combination of two words "Chick" and "kita". "Chick" refers to Chicken, 
               while "kita" means us/we/our in Bahasa/Indonesian. Together, it represents our focus on 
               community, communal dining, and togetherness – a pillar of Asian culture.
@@ -25,7 +25,7 @@ export default function About() {
       </section>
 
       {/* Founder Section */}
-      <section className="py-24 bg-dark-900">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Image */}
@@ -38,8 +38,8 @@ export default function About() {
                 />
               </div>
               {/* Quote overlay */}
-              <div className="absolute -bottom-8 -right-8 max-w-sm p-6 bg-dark-800 border border-dark-700 rounded-2xl shadow-xl">
-                <blockquote className="text-white italic">
+              <div className="absolute -bottom-8 -right-8 max-w-sm p-6 bg-white border border-gray-200 rounded-2xl shadow-xl">
+                <blockquote className="text-gray-700 italic">
                   "I strongly believe that a successful concept is the one that carries the heart, 
                   passion & soul in all its food and services."
                 </blockquote>
@@ -49,10 +49,10 @@ export default function About() {
             
             {/* Content */}
             <div>
-              <h2 className="text-3xl sm:text-4xl font-display font-bold text-white">
+              <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900">
                 Where The Journey <span className="gradient-text">Begins</span>
               </h2>
-              <div className="mt-6 space-y-4 text-dark-300 leading-relaxed">
+              <div className="mt-6 space-y-4 text-gray-600 leading-relaxed">
                 <p>
                   Asif Mehrudeen, Founder of Chickita®, is an Australian with a heart full of passion 
                   for cooking. He had always dreamed of writing his own flame grilled chicken story.
@@ -78,13 +78,13 @@ export default function About() {
       </section>
 
       {/* Values Section */}
-      <section className="py-24 bg-dark-800">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-display font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900">
               Chickita® Is All About <span className="gradient-text">Good Things</span>
             </h2>
-            <p className="text-dark-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               Good food, good service, good value, good health, and good times.
             </p>
           </div>
@@ -116,8 +116,8 @@ export default function About() {
                 <div className="w-16 h-16 bg-primary-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <value.icon size={32} className="text-primary-500" />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2">{value.title}</h3>
-                <p className="text-dark-400">{value.description}</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{value.title}</h3>
+                <p className="text-gray-600">{value.description}</p>
               </div>
             ))}
           </div>
@@ -125,14 +125,14 @@ export default function About() {
       </section>
 
       {/* Promise Section */}
-      <section className="py-24 bg-dark-900">
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-display font-bold text-white">
+              <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900">
                 Our <span className="gradient-text">Promise</span>
               </h2>
-              <p className="text-dark-300 mt-6 text-lg leading-relaxed">
+              <p className="text-gray-600 mt-6 text-lg leading-relaxed">
                 At Chickita®, we're committed to delivering an exceptional dining experience 
                 that brings together quality ingredients, authentic flavours, and warm hospitality.
               </p>
@@ -151,7 +151,7 @@ export default function About() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
-                    <span className="text-white">{promise}</span>
+                    <span className="text-gray-700">{promise}</span>
                   </div>
                 ))}
               </div>
@@ -192,12 +192,12 @@ export default function About() {
       </section>
 
       {/* Join Team Section */}
-      <section className="py-24 bg-dark-800">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-display font-bold text-white">
+          <h2 className="text-3xl sm:text-4xl font-display font-bold text-gray-900">
             Join The <span className="gradient-text">Team</span>
           </h2>
-          <p className="text-dark-300 mt-4 text-lg">
+          <p className="text-gray-600 mt-4 text-lg">
             We are always looking for awesome people to work with us. If you're passionate 
             about food and customer service, we'd love to hear from you!
           </p>

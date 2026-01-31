@@ -45,15 +45,15 @@ export default function Contact() {
   }
 
   return (
-    <div className="min-h-screen bg-dark-900">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-b from-dark-800 to-dark-900">
+      <section className="relative py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-primary-500 font-medium text-sm uppercase tracking-wider">Contact Us</span>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-white mt-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-gray-900 mt-4">
             Get in <span className="gradient-text">Touch</span>
           </h1>
-          <p className="text-dark-300 mt-6 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-600 mt-6 max-w-2xl mx-auto text-lg">
             Have a question, feedback, or enquiry? We'd love to hear from you! 
             Our friendly team will get back to you as soon as possible.
           </p>
@@ -67,41 +67,41 @@ export default function Contact() {
             {/* Contact Info */}
             <div className="lg:col-span-1 space-y-8">
               {/* Quick Contact */}
-              <div className="bg-dark-800 rounded-2xl p-6 border border-dark-700">
-                <h3 className="text-xl font-semibold text-white mb-6">Quick Contact</h3>
+              <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">Quick Contact</h3>
                 
                 <div className="space-y-4">
                   <a 
                     href="tel:0395965473" 
-                    className="flex items-start gap-4 p-4 bg-dark-700 rounded-xl hover:bg-dark-600 transition-colors"
+                    className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
                   >
                     <div className="w-10 h-10 bg-primary-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Phone size={20} className="text-primary-500" />
                     </div>
                     <div>
-                      <h4 className="text-white font-medium">Phone</h4>
-                      <p className="text-dark-400 text-sm">03 9596 5473</p>
+                      <h4 className="text-gray-900 font-medium">Phone</h4>
+                      <p className="text-gray-600 text-sm">03 9596 5473</p>
                     </div>
                   </a>
                   
                   <a 
                     href="mailto:flame@chickita.com.au" 
-                    className="flex items-start gap-4 p-4 bg-dark-700 rounded-xl hover:bg-dark-600 transition-colors"
+                    className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
                   >
                     <div className="w-10 h-10 bg-primary-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Mail size={20} className="text-primary-500" />
                     </div>
                     <div>
-                      <h4 className="text-white font-medium">Email</h4>
-                      <p className="text-dark-400 text-sm">flame@chickita.com.au</p>
+                      <h4 className="text-gray-900 font-medium">Email</h4>
+                      <p className="text-gray-600 text-sm">flame@chickita.com.au</p>
                     </div>
                   </a>
                 </div>
               </div>
               
               {/* Locations */}
-              <div className="bg-dark-800 rounded-2xl p-6 border border-dark-700">
-                <h3 className="text-xl font-semibold text-white mb-6">Our Locations</h3>
+              <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">Our Locations</h3>
                 
                 <div className="space-y-4">
                   {[
@@ -113,13 +113,13 @@ export default function Contact() {
                     <div key={location.name} className="flex items-start gap-3">
                       <MapPin size={18} className="text-primary-500 flex-shrink-0 mt-1" />
                       <div>
-                        <h4 className="text-white font-medium">
+                        <h4 className="text-gray-900 font-medium">
                           {location.name}
                           {location.isNew && (
                             <span className="ml-2 px-2 py-0.5 bg-primary-500 text-white text-xs rounded-full">NEW</span>
                           )}
                         </h4>
-                        <p className="text-dark-400 text-sm">{location.address}</p>
+                        <p className="text-gray-600 text-sm">{location.address}</p>
                       </div>
                     </div>
                   ))}
@@ -134,15 +134,15 @@ export default function Contact() {
               </div>
               
               {/* Hours */}
-              <div className="bg-dark-800 rounded-2xl p-6 border border-dark-700">
-                <h3 className="text-xl font-semibold text-white mb-6">Opening Hours</h3>
+              <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">Opening Hours</h3>
                 
                 <div className="flex items-start gap-3">
                   <Clock size={18} className="text-primary-500 flex-shrink-0 mt-1" />
                   <div>
-                    <p className="text-white">10:30am - 10:00pm</p>
-                    <p className="text-dark-400 text-sm">7 days a week*</p>
-                    <p className="text-dark-500 text-xs mt-2">*Except Christmas Day</p>
+                    <p className="text-gray-900">10:30am - 10:00pm</p>
+                    <p className="text-gray-600 text-sm">7 days a week*</p>
+                    <p className="text-gray-500 text-xs mt-2">*Except Christmas Day</p>
                   </div>
                 </div>
               </div>
@@ -150,17 +150,17 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-dark-800 rounded-2xl p-8 border border-dark-700">
-                <h2 className="text-2xl font-display font-bold text-white mb-2">Send Us a Message</h2>
-                <p className="text-dark-400 mb-8">Fill out the form below and we'll get back to you soon.</p>
+              <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+                <h2 className="text-2xl font-display font-bold text-gray-900 mb-2">Send Us a Message</h2>
+                <p className="text-gray-600 mb-8">Fill out the form below and we'll get back to you soon.</p>
                 
                 {isSubmitted ? (
                   <div className="text-center py-12">
                     <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Check size={32} className="text-white" />
                     </div>
-                    <h3 className="text-2xl font-semibold text-white mb-2">Message Sent!</h3>
-                    <p className="text-dark-400 mb-6">
+                    <h3 className="text-2xl font-semibold text-gray-900 mb-2">Message Sent!</h3>
+                    <p className="text-gray-600 mb-6">
                       Thank you for contacting us. We'll get back to you as soon as possible.
                     </p>
                     <button
@@ -185,7 +185,7 @@ export default function Contact() {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
-                        <label htmlFor="firstName" className="block text-white font-medium mb-2">
+                        <label htmlFor="firstName" className="block text-gray-900 font-medium mb-2">
                           First Name <span className="text-primary-500">*</span>
                         </label>
                         <input
@@ -195,13 +195,13 @@ export default function Contact() {
                           value={formData.firstName}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-xl text-white placeholder:text-dark-500 focus:outline-none focus:border-primary-500 transition-colors"
+                          className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-primary-500 transition-colors"
                           placeholder="John"
                         />
                       </div>
                       
                       <div>
-                        <label htmlFor="lastName" className="block text-white font-medium mb-2">
+                        <label htmlFor="lastName" className="block text-gray-900 font-medium mb-2">
                           Last Name <span className="text-primary-500">*</span>
                         </label>
                         <input
@@ -211,7 +211,7 @@ export default function Contact() {
                           value={formData.lastName}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-xl text-white placeholder:text-dark-500 focus:outline-none focus:border-primary-500 transition-colors"
+                          className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-primary-500 transition-colors"
                           placeholder="Doe"
                         />
                       </div>
@@ -219,7 +219,7 @@ export default function Contact() {
                     
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
-                        <label htmlFor="email" className="block text-white font-medium mb-2">
+                        <label htmlFor="email" className="block text-gray-900 font-medium mb-2">
                           Email <span className="text-primary-500">*</span>
                         </label>
                         <input
@@ -229,13 +229,13 @@ export default function Contact() {
                           value={formData.email}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-xl text-white placeholder:text-dark-500 focus:outline-none focus:border-primary-500 transition-colors"
+                          className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-primary-500 transition-colors"
                           placeholder="john@example.com"
                         />
                       </div>
                       
                       <div>
-                        <label htmlFor="phone" className="block text-white font-medium mb-2">
+                        <label htmlFor="phone" className="block text-gray-900 font-medium mb-2">
                           Phone <span className="text-primary-500">*</span>
                         </label>
                         <input
@@ -245,14 +245,14 @@ export default function Contact() {
                           value={formData.phone}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-xl text-white placeholder:text-dark-500 focus:outline-none focus:border-primary-500 transition-colors"
+                          className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-primary-500 transition-colors"
                           placeholder="04XX XXX XXX"
                         />
                       </div>
                     </div>
                     
                     <div>
-                      <label htmlFor="subject" className="block text-white font-medium mb-2">
+                      <label htmlFor="subject" className="block text-gray-900 font-medium mb-2">
                         Subject <span className="text-primary-500">*</span>
                       </label>
                       <select
@@ -261,7 +261,7 @@ export default function Contact() {
                         value={formData.subject}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-xl text-white focus:outline-none focus:border-primary-500 transition-colors"
+                        className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 focus:outline-none focus:border-primary-500 transition-colors"
                       >
                         <option value="">Select a subject</option>
                         <option value="general">General Enquiry</option>
@@ -275,7 +275,7 @@ export default function Contact() {
                     </div>
                     
                     <div>
-                      <label htmlFor="message" className="block text-white font-medium mb-2">
+                      <label htmlFor="message" className="block text-gray-900 font-medium mb-2">
                         Message <span className="text-primary-500">*</span>
                       </label>
                       <textarea
@@ -285,7 +285,7 @@ export default function Contact() {
                         onChange={handleChange}
                         required
                         rows={5}
-                        className="w-full px-4 py-3 bg-dark-700 border border-dark-600 rounded-xl text-white placeholder:text-dark-500 focus:outline-none focus:border-primary-500 transition-colors resize-none"
+                        className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-primary-500 transition-colors resize-none"
                         placeholder="How can we help you?"
                       />
                     </div>
@@ -297,9 +297,9 @@ export default function Contact() {
                         name="subscribe"
                         checked={formData.subscribe}
                         onChange={handleChange}
-                        className="w-5 h-5 rounded border-dark-600 bg-dark-700 text-primary-500 focus:ring-primary-500"
+                        className="w-5 h-5 rounded border-gray-300 bg-gray-50 text-primary-500 focus:ring-primary-500"
                       />
-                      <label htmlFor="subscribe" className="text-dark-400">
+                      <label htmlFor="subscribe" className="text-gray-600">
                         Sign up for news and updates from Chickita
                       </label>
                     </div>
@@ -330,12 +330,12 @@ export default function Contact() {
       </section>
 
       {/* Google Review CTA */}
-      <section className="py-16 bg-dark-800">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-display font-bold text-white">
+          <h2 className="text-3xl font-display font-bold text-gray-900">
             We Value Your <span className="gradient-text">Feedback</span>
           </h2>
-          <p className="text-dark-300 mt-4">
+          <p className="text-gray-600 mt-4">
             If you enjoyed your experience at Chickita®, please consider leaving us a Google Review. 
             Your feedback helps us improve and serve you better!
           </p>
